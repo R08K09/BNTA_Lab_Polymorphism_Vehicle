@@ -29,6 +29,15 @@ public class SpeedBoatTest {
         assertThat(speedboat.getHullType()).isEqualTo("Flat-Bottom");
     }
 
+    @Test
+    public void isUsedForPublicTravel(){
+        assertThat(speedboat.isForPublicTravel()).isEqualTo(false);
+    }
 
+    @Test
+    public void makeForPublicTravel(){
+        speedboat.setIfSuitableForPublicTravel(true);
+        assertThat(speedboat.isForPublicTravel()).isEqualTo(true);
+    }
 
 }

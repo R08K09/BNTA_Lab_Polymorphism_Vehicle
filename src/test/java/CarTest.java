@@ -47,7 +47,7 @@ public class CarTest {
     }
 
     @Test
-    public void getMaxOccupancy(){
+    public void getCarMaxOccupancy(){
         assertThat(car.getMaxOccupancy()).isEqualTo(5);
     }
 

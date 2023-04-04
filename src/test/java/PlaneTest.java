@@ -23,5 +23,27 @@ public class PlaneTest {
         assertThat(plane.isPrivateOrCommercial()).isEqualTo("commercial");
     }
 
-    
+    @Test
+    public void getPlaneName(){
+        assertThat(plane.getName()).isEqualTo("Airbus A380");
+    }
+
+    @Test
+    public void canSetPlaneName(){
+        plane.setName("Airbus A350");
+        assertThat(plane.getName()).isEqualTo("Airbus A350");
+    }
+
+    @Test
+    public void getPlaneColour(){
+        assertThat(plane.getColour()).isEqualTo("White");
+    }
+
+    @Test
+    public void setPlaneColour(){
+        plane.setColour("Yellow");
+        assertThat(plane.getColour()).isEqualTo("Yellow");
+    }
+
+
 }

@@ -19,6 +19,22 @@ public abstract class Vehicle implements IVehicle {
     }
 
     // Methods
+    public String getName(){
+        return this.name;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public String getColour(){
+        return this.colour;
+    }
+
+    public void setColour(String colour){
+        this.colour = colour;
+    }
+
     public int getMaxSpeed(){
         return this.maxSpeed;
     }
@@ -34,6 +50,15 @@ public abstract class Vehicle implements IVehicle {
     public void setMaxOccupancy(int maxOccupancy){
         this.maxOccupancy = maxOccupancy;
     }
+
+    public boolean isForPublicTravel(){
+        return this.publicTravel;
+    }
+
+    public void setIfSuitableForPublicTravel(boolean publicTravel){
+        this.publicTravel = publicTravel;
+    }
+
 
 
 }
